@@ -1,0 +1,198 @@
+:root{
+    --green:#00917c;
+    --blue:#131a2f;
+ }
+ 
+ *{
+     margin: 0px;
+     padding: 0px;
+ }
+ html{
+    scroll-padding-top: 3rem;
+ }
+ body{
+     overflow-x: hidden;
+ }
+ @media (max-width: 768px) {
+    body {
+        margin-right: 0; /* Remove margin-right for smaller screens */
+        overflow-x: hidden;
+    }
+}
+ @media(max-width:400px){
+    .img_about{
+        text-align: center;
+    justify-content: center;
+    }
+ }
+ .navbar{
+    background-color: var(--blue);
+    height: 90px;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 2000;
+    
+ }
+
+ /* Navbar Drawer */
+/* Navbar Drawer */
+.navbar-collapse {
+    /* position: fixed; */
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    z-index: 1000; 
+    transition: top 0s ease;
+}
+
+.navbar-toggler {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.navbar-nav {
+    width: 100%;
+    padding-top: 20px;
+}
+
+/* .navbar-nav .nav-item {
+    padding: 10px;
+} */
+
+/* .navbar-nav .nav-item a {
+    display: block;
+    color: #000; 
+    text-decoration: none;
+} */
+
+/* .navbar-nav .nav-item a:hover {
+    background-color: #082847; /* Change the hover background color as needed */
+/* } */ 
+
+/* .navbar-collapse.show {
+    top: 0;
+} */
+
+/* .navbar-toggler {
+    transition: background-color 0.3s; /* Smooth transition for background color change */
+/* } */
+
+/* .navbar-toggler[aria-expanded="true"] {
+    background-color: var(--blue); /* Change to desired background color */
+/* }  */ 
+
+@media (max-width: 991.98px) {
+    .navbar-collapse.show {
+        background-color: var(--blue); /* Change to desired background color */
+        position: absolute;
+        top: 100%; /* Position the background below the navbar */
+        width: 100%;
+        z-index: 1; /* Ensure the background is behind the navbar content */
+        height: 400px;
+    }
+}
+
+.navbar-toggler {
+    width: 50px; /* Adjust the width as needed */
+    background-color: white;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+ 
+
+ .welcome{
+    background-image: url("https://i1.wp.com/blog.tripfez.com/wp-content/uploads/2020/03/shutterstock_788252074-scaled.jpg?fit=2560%2C1708&ssl=1");
+    background-position:  center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100vh;
+}
+
+.main h1{
+    padding-top: 250px;
+    font-size: 100px;
+}
+.heading{
+    padding: 40px;
+   
+}
+
+.text-justify-css {
+    text-align: justify;
+}
+
+@media (max-width:600px){
+.about-content{
+    padding: 20px;
+    margin: 20px;
+
+}
+.img_about{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    text-align: center;
+}
+.subs-btn{
+    text-align: center;
+}
+}
+#carouselExampleCaptions {
+    max-height: 450px; /* Adjust the height as needed */
+  }
+
+  .carousel-inner .carousel-item img {
+    max-height: 450px; /* Adjust the height as needed */
+    object-fit: cover; /* Ensure the image covers the entire carousel item */
+  }
+
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background to captions */
+  }
+.img1{
+    position: relative;
+}
+.place{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    width: 252px;
+    height: 50px;
+    padding: 10px
+}
+.services{
+    background-image: url("https://preview.colorlib.com/theme/hotell/images/img_4.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.img2 img{
+    padding: 40px;
+width: 180px;
+height: 180px;
+} 
+/* .carousel-inner .carousel-item {
+    transition: transform 0.6s ease; /* Change the duration as needed */
+  /* }  */
+
+.contact{
+    background-image: url("https://preview.colorlib.com/theme/travello/images/footer_1.jpg");
+}
+.subs-btn{
+    margin-right: 90px;
+}
+
+.footer1{
+    padding: 60px;
+}
+
+footer{
+    background-color: #0c111e;
+    color: white;
+}
