@@ -112,6 +112,12 @@
     width: 100vw;
     height: 100vh;
 }
+.sample{
+    background-color: rgba(0, 0, 0, 0.304);
+    width: 100vw;
+    height: 100vh;
+
+}
 
 .main h1{
     padding-top: 250px;
@@ -122,15 +128,84 @@
    
 }
 
+/* Section Book Start */
+.book{
+    background: #f9f9f9;
+    padding: 50px;
+}
+.main-text h1{
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+}
+.main-text h1 span{
+    color: #ffa500;
+}
+.book .card{
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book .row{
+    margin-top: 30px;
+}
+.book form input{
+    padding: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book form textarea{
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    box-shadow: 0px 5px 5px -6px black;
+    height: 200px;
+}
+.book .submit{
+    width: 160px;
+    font-size: 16px;
+    font-weight: 550;
+    background: #ffa500;
+    color: white;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+.book .submit:hover{
+    width: 170px;
+}
+@media (max-width:765px){
+    .book{
+        padding: 0;
+    }
+    .main-text h1{
+        padding: 20px;
+    }
+}
+
+input[type="date"]::-webkit-datetime-edit {
+    display: none;
+}
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-clear-button {
+    display: none;
+}
+/* Section Book End */
+
+
 .text-justify-css {
     text-align: justify;
+    
 }
 
 @media (max-width:600px){
 .about-content{
-    padding: 20px;
-    margin: 20px;
+    padding: 60px;
+    margin: 0px;
 
+}
 }
 .img_about{
     display: flex;
@@ -141,6 +216,17 @@
 .subs-btn{
     text-align: center;
 }
+.subs-btn1:hover{
+    animation: shake 0.5s;
+}
+      @keyframes shake{
+        0%{transform: translateX(0px);}
+        25%{transform: translateX(-5px);}
+        50%{transform: translateX(5px);}
+        75%{transform: translateX(-5px);}
+        100%{transform: translateX(0px);}
+      }
+
 }
 #carouselExampleCaptions {
     max-height: 450px; /* Adjust the height as needed */
@@ -195,4 +281,17 @@ height: 180px;
 footer{
     background-color: #0c111e;
     color: white;
+}
+
+
+.custom-toast {
+    background-color: #0056b3; /* Example color */
+    color: white;
+}
+.custom-toast .toast-header {
+    background-color: #004494; /* Example color */
+    color: white;
+}
+.custom-toast .btn-close {
+    filter: invert(1);
 }
