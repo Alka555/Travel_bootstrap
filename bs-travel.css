@@ -31,6 +31,8 @@
     justify-content: space-around;
     position: fixed;
     z-index: 2000;
+    top: 0;
+    left: 0;
     
  }
 
@@ -100,6 +102,13 @@
     background-color: white;
     margin-left: 10px;
     padding-left: 10px;
+}
+
+.nav-link{
+    color: white;
+}
+.nav-link:hover{
+    color: #04c7aa;
 }
 
  
@@ -227,7 +236,8 @@ input[type="date"]::-webkit-clear-button {
         100%{transform: translateX(0px);}
       }
 
-}
+
+
 #carouselExampleCaptions {
     max-height: 450px; /* Adjust the height as needed */
   }
