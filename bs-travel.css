@@ -111,6 +111,27 @@
     color: #04c7aa;
 }
 
+/* .welcome {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+} */
+
+
+
+
+@keyframes twinkle {
+    0% {
+        opacity: 0.8;
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    }
+    100% {
+        opacity: 1;
+        text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+    }
+}
  
 
  .welcome{
@@ -125,12 +146,16 @@
     background-color: rgba(0, 0, 0, 0.304);
     width: 100vw;
     height: 100vh;
+    text-align: center;
+
 
 }
 
 .main h1{
     padding-top: 250px;
     font-size: 100px;
+    color: #fff;
+    animation: twinkle 2s infinite alternate;
 }
 .heading{
     padding: 40px;
